@@ -255,9 +255,9 @@ ImGuiAl::Log::Log(void* const buffer, size_t const buffer_size)
     , _level(Level::Debug)
     , _cumulative(true) {
 
-    setColor(Level::Debug, CGA::BrightBlue);
-    setColor(Level::Info, CGA::BrightGreen);
-    setColor(Level::Warning, CGA::Yellow);
+	setColor(Level::Debug, CGA::BrightOrange);
+	setColor(Level::Info, CGA::White);
+	setColor(Level::Warning, CGA::BrightWhite);
     setColor(Level::Error, CGA::BrightRed);
     autoScrollToBotttom = true;
 }

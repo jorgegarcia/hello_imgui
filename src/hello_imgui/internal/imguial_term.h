@@ -74,7 +74,8 @@ class Crt {
             BrightRed     = IM_COL32(0xff, 0x55, 0x55, 0xff),
             BrightMagenta = IM_COL32(0xff, 0x55, 0xff, 0xff),
             Yellow        = IM_COL32(0xff, 0xff, 0x55, 0xff),
-            BrightWhite   = IM_COL32(0xff, 0xff, 0xff, 0xff)
+			BrightWhite   = IM_COL32(0xff, 0xff, 0xff, 0xff),
+			BrightOrange  = IM_COL32(0xff, 0x5b, 0x00, 0xff)
         };
     };
 
@@ -160,7 +161,7 @@ class Log : protected Crt {
     ImU32 _errorTextColor;
     ImU32 _errorButtonColor;
     ImU32 _errorButtonHoveredColor;
-    bool  _useAutomaticColors = true;
+    bool  _useAutomaticColors = false;
 
     char const* _debugLabel;
     char const* _infoLabel;
